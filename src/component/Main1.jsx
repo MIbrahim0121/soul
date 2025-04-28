@@ -201,7 +201,14 @@ const Main1 = () => {
       <div className="flex flex-col md:flex-row justify-center min-h-screen px-6 pb-8 gap-10">
         <div className="w-full md:w-1/2 flex flex-col items-center md:ml-35">
           <div className="w-full max-w-[350px] flex flex-col items-center text-gray-700">
-            <video controls className="w-full rounded-md shadow-lg" src={vide}></video>
+          <video
+        controls
+        className="w-full rounded-md shadow-lg"
+        src={vide} // Video source
+        poster={book} // Thumbnail image before video starts
+      >
+        Your browser does not support the video tag.
+      </video>
           </div>
         </div>
 
