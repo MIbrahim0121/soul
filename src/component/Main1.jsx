@@ -6,8 +6,8 @@ import payment from "../assets/payments.png";
 
 const Main1 = () => {
   return (
-    <div className="w-full px-4 md:px-0">
-      <div className="flex flex-col md:flex-row w-full h-auto mb-20 md:mb-36">
+    <div className="w-full mt-12 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row w-full h-auto mb-20 md:mb-20">
         
         {/* Left Side */}
         <div className="w-full md:w-[50%] pt-5 flex flex-col items-center md:items-end">
@@ -19,7 +19,8 @@ const Main1 = () => {
         </div>
 
         {/* Right Side */}
-        <div className="w-full md:w-[50%] flex flex-col items-center md:items-start mt-10 md:mt-24">
+        <div className="w-full md:w-[50%] flex flex-col items-center
+         md:items-start ">
           <h1 className="font-serif text-center text-2xl md:text-3xl leading-tight">
             Still Attractive Emotionally
             <br />
@@ -49,7 +50,7 @@ const Main1 = () => {
 
           <img src={payment} className="w-[60%] md:w-[45%]  md:ml-12" alt="" />
 
-          <p className="text-sm text-center md:text-left mt-4">
+          <p className="text-sm text-center md:text-left mt-4 md:ml-12">
             This bestselling guide has helped thousands of women<br /> finally 
             understand their relationship patterns — and take back their emotional power.
           </p>

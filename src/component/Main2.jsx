@@ -23,7 +23,7 @@ const Main2 = () => {
       </div>
 
       {/* Right Side - Text Content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 flex flex-col justify-start mt-20 ">
         <p className="mb-4 text-sm md:text-md italic text-gray-700 text-center md:text-left">
           You’re smart. You’re self-aware.
           <br />
