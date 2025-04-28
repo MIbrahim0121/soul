@@ -134,7 +134,7 @@ const Main1 = () => {
 
   return (
     <div>
-      <div className="w-full md:mt-14 px-4 md:px-0">
+      <div className="w-full md:mt-12 px-4 md:px-0">
         <div className="flex flex-col md:flex-row w-full h-auto ">
 
           {/* Left Side */}
@@ -151,18 +151,26 @@ const Main1 = () => {
             </div>
             {/* Slider End */}
 
-            <h1 className="font-serif text-4xl md:text-3xl font-semibold mt-4 md:pr-28">
+            <h1 className="font-serif hidden md:block text-4xl md:text-3xl font-semibold mt-4 md:pr-28">
               About The Book
+            </h1>
+            <h1 className="font-serif text-center md:text-left md:hidden block mt-6 text-3xl font-semibold font-light  md:text-3xl leading-tight">
+              Still Attractive<br /> Emotionally
+              
+              Unavailable <br />Men
             </h1>
             <img className="w-[100%] md:w-[60%] mt-7" src={rev} alt="" />
           </div>
 
           {/* Right Side */}
           <div className="w-full md:w-[50%] flex flex-col items-center md:items-start ">
-            <h1 className="font-serif text-center md:text-left  text-3xl font-bold  md:text-3xl leading-tight">
+            <h1 className="font-serif text-center hidden md:block md:text-left  text-3xl font-bold  md:text-3xl leading-tight">
               Still Attractive<br /> Emotionally
               
               Unavailable <br />Men
+            </h1>
+            <h1 className="font-serif  md:hidden block text-4xl md:text-3xl font-semibold mt-4 md:pr-28">
+              About The Book
             </h1>
 
             <p className="text-lg md:text-[12px] md:pl-24 mt-2">
@@ -186,9 +194,9 @@ const Main1 = () => {
               Yes, I Want the Healing Guide
             </button>
 
-            <img src={payment} className="w-[90%] md:w-[45%]  md:ml-12" alt="" />
+            <img src={payment} className="w-[100%] md:w-[45%]  md:ml-12" alt="" />
 
-            <p className="text-lg text-center md:text-left  md:ml-12">
+            <p className="text-xl -mt-16  text-center md:text-left  md:ml-12">
               This bestselling guide has helped thousands of women<br /> finally 
               understand their relationship patterns — and take back their emotional power.
             </p>
@@ -198,7 +206,7 @@ const Main1 = () => {
       </div>
 
       {/* Remaining part unchanged */}
-      <div className="flex flex-col md:flex-row justify-center min-h-screen px-6 pb-8 gap-10">
+      <div className="flex flex-col md:flex-row pt-6 justify-center min-h-screen px-6 pb-8 gap-10">
         <div className="w-full md:w-1/2 flex flex-col items-center md:ml-35">
           <div className="w-full max-w-[350px] flex flex-col items-center text-gray-700">
           <video
@@ -212,7 +220,7 @@ const Main1 = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 flex flex-col justify-start mt-20">
+        <div className="w-full  md:w-1/2 flex flex-col justify-start md:mt-16 ">
           <p className="mb-4 text-lg md:text-md italic text-gray-700 text-center md:text-left">
             You’re smart. You’re self-aware.
             <br />
