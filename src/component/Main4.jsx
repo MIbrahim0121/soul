@@ -15,7 +15,7 @@ export default function Testimonials() {
 
     <div className="px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-3 justify-items-center">
       {/* Testimonial 1 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-md">
+      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile}
@@ -44,7 +44,7 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 2 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-md">
+      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile2}
@@ -71,7 +71,7 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 3 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-md">
+      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile3}
@@ -98,7 +98,7 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 4 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-md">
+      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile4}
@@ -125,7 +125,7 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 5 (centered) */}
-      <div className="border-2 md:hidden md:m-auto border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-md">
+      <div className="border-2 md:hidden md:m-auto border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile5}
@@ -151,7 +151,7 @@ export default function Testimonials() {
         I love this book! I never thought I needed to heal my inner child until now! Recommend to everyone!        </p>
       </div>
     </div>
-      <div className="border-2 md:block hidden md:m-auto border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-md">
+      <div className="border-2 md:block hidden md:m-auto border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile5}
@@ -186,7 +186,7 @@ export default function Testimonials() {
         <span className="font-semibold underline">17,000+ COPIES SOLD</span> | 60-DAY GUARANTEE
       </div>
 
-<div className="mt-10 mb-8 bg-gradient-to-b from-[#f9f1fb] to-[#fdf4e3] p-6 rounded-b-2xl shadow-md max-w-3xl mx-auto text-center text-[#2e2e2e] space-y-6">
+<div className="mt-10 mb-8 bg-gradient-to-b from-[#f9f1fb] to-[#fdf4e3] p-6 rounded-b-2xl shadow-lg max-w-3xl mx-auto text-center text-[#2e2e2e] space-y-6">
   {/* Top Context */}
   <div className="space-y-2">
     <p className="text-lg font-medium  text-gray-800">

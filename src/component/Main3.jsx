@@ -3,8 +3,8 @@ export default function TwoBoxes() {
     window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
   };
   return (
-      <div className=" bg-gradient-to-b from-[#f9f1fb] to-[#fdf4e3] h-auto pb-5" >
-    <div className="flex flex-col md:flex-row justify-center items-start gap-10 p-8 bg-[#f9f5ee] h-auto">
+      <div className=" bg-[#fef8ef] h-auto pb-5" >
+    <div className="flex flex-col md:flex-row justify-center items-start gap-10 p-8 bg-[#fef8ef]  h-auto">
       
       {/* Box 1 */}
       <div className="bg-gradient-to-b from-[#f9f1fb] to-[#fdf4e3] p-6 rounded-xl shadow-md w-full md:w-1/2">
