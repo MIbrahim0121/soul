@@ -131,6 +131,9 @@ const Main1 = () => {
   const prevSlide = () => {
     setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
   };
+  const handleClick = () => {
+    window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
+  };
 
   return (
     <div>
@@ -142,10 +145,10 @@ const Main1 = () => {
             {/* Slider Start */}
             <div className="relative w-[70%] md:w-[54%] md:pr-16">
               <img className="w-full border-2 border-black h-auto rounded-md" src={images[currentImage]} alt="Slider" />
-              <button onClick={prevSlide} className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-1">
+              <button onClick={prevSlide} className="absolute top-1/2 md:-left-4 left-2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-1">
                 ‹
               </button>
-              <button onClick={nextSlide} className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-1">
+              <button onClick={nextSlide} className="absolute top-1/2 md:right-12 right-2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-1">
                 ›
               </button>
             </div>
@@ -154,7 +157,7 @@ const Main1 = () => {
             <h1 className="font-serif hidden md:block text-4xl md:text-3xl font-semibold mt-4 md:pr-28">
               About The Book
             </h1>
-            <h1 className="font-serif text-center md:text-left md:hidden block mt-6 text-3xl font-semibold font-light  md:text-3xl leading-tight">
+            <h1 className="font-serif text-center md:text-left md:hidden block mt-6 text-3xl font-semibold   md:text-3xl leading-tight">
               Still Attractive<br /> Emotionally
               
               Unavailable <br />Men
@@ -190,7 +193,7 @@ const Main1 = () => {
               It’s not your fault — but it is your pattern. And it can be healed
             </p>
 
-            <button className="p-5 md:p-3 text-lg md:text-base text-white bg-black rounded-xl mt-6 md:ml-20 md:mt-10">
+            <button onClick={handleClick} className="p-5 md:p-3 text-lg md:text-base text-white bg-black rounded-xl mt-6 md:ml-20 md:mt-10">
               Yes, I Want the Healing Guide
             </button>
 
@@ -209,9 +212,9 @@ const Main1 = () => {
       <div className="flex flex-col md:flex-row pt-6 justify-center min-h-screen px-6 pb-8 gap-10">
         <div className="w-full md:w-1/2 flex flex-col items-center md:ml-35">
           <div className="w-full max-w-[350px] flex flex-col items-center text-gray-700">
-          <video
+          <video 
         controls
-        className="w-full rounded-md shadow-lg"
+        className="w-full md:-m-28 rounded-md shadow-lg"
         src={vide} // Video source
         poster={book} // Thumbnail image before video starts
       >
