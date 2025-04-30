@@ -15,15 +15,15 @@ export default function Testimonials() {
 
     <div className="px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-3 justify-items-center">
       {/* Testimonial 1 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
+      <div className="border-2 border-dashed border-green-500 rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile}
-            alt="Maya R."
+            alt="Emly Burnett."
             className="w-8 h-8 rounded-full object-cover"
           />
           <div>
-            <h2 className="text-sm font-semibold">Maya R.</h2>
+            <h2 className="text-sm font-semibold">Emly Burnett.</h2>
             <div className="flex">
               <Star filled />
               <Star filled />
@@ -44,15 +44,15 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 2 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
+      <div className="border-2 border-dashed border-green-500 rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile2}
-            alt="Maya R."
+            alt="Lucy Lowery - 4.9/5."
             className="w-8 h-8 rounded-full object-cover"
           />
           <div>
-            <h2 className="text-sm font-semibold">Maya R.</h2>
+            <h2 className="text-sm font-semibold">Lucy Lowery - 4.9/5.</h2>
             <div className="flex">
               <Star filled />
               <Star filled />
@@ -71,15 +71,15 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 3 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
+      <div className="border-2 border-dashed border-green-500 rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile3}
-            alt="Maya R."
+            alt="Bernice Hatfield - 4.9/5."
             className="w-8 h-8 rounded-full object-cover"
           />
           <div>
-            <h2 className="text-sm font-semibold">Maya R.</h2>
+            <h2 className="text-sm font-semibold">Bernice Hatfield - 4.9/5.</h2>
             <div className="flex">
               <Star filled />
               <Star filled />
@@ -98,15 +98,15 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 4 */}
-      <div className="border-2 border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
+      <div className="border-2 border-dashed border-green-500 rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile4}
-            alt="Maya R."
+            alt="Brandy Wade - 4.8/5."
             className="w-8 h-8 rounded-full object-cover"
           />
           <div>
-            <h2 className="text-sm font-semibold">Maya R.</h2>
+            <h2 className="text-sm font-semibold">Brandy Wade - 4.8/5.</h2>
             <div className="flex">
               <Star filled />
               <Star filled />
@@ -125,15 +125,15 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial 5 (centered) */}
-      <div className="border-2 md:hidden md:m-auto border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
+      <div className="border-2 md:hidden md:m-auto border-dashed border-green-500 rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile5}
-            alt="Maya R."
+            alt="Maria Wisney - 4.8/5."
             className="w-8 h-8 rounded-full object-cover"
           />
           <div>
-            <h2 className="text-sm font-semibold">Maya R.</h2>
+            <h2 className="text-sm font-semibold">Maria Wisney - 4.8/5.</h2>
             <div className="flex">
               <Star filled />
               <Star filled />
@@ -151,7 +151,7 @@ export default function Testimonials() {
         I love this book! I never thought I needed to heal my inner child until now! Recommend to everyone!        </p>
       </div>
     </div>
-      <div className="border-2 md:block hidden md:m-auto border-dashed border-black rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
+      <div className="border-2 md:block hidden md:m-auto border-dashed border-green-500 rounded-xl p-4 text-[#2e2e2e] max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-3">
           <img
             src={profile5}
