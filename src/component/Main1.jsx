@@ -162,11 +162,51 @@ const Main1 = () => {
               
               Unavailable <br />Men
             </h1>
-            <img className="w-[100%] md:w-[60%] mt-7" src={rev} alt="" />
+            <div className="w-full md:hidden  md:w-[50%] flex flex-col items-center md:items-start ">
+           
+            
+
+            <p className="text-lg md:text-[12px] md:pl-24 mt-2">
+              4.8/5 (606 Reviews) | <b>17.2K Sold</b>
+            </p>
+
+            <hr className="h-[1px] mt-5 w-[80%] md:w-[60%] bg-black" />
+
+            <img className="w-[85%] md:w-[45%] md:ml-16 md:pt-6 mt-6" src={three} alt="" />
+
+            <div className="p-2 flex gap-2 md:ml-28 mt-4 ">
+              <span className="text-3xl md:text-3xl">$19.90</span>
+              <span className="text-3xl md:text-3xl text-gray-500 line-through">$58.00</span>
+            </div>
+
+            <p className="text-lg md:text-[13px] text-center md:text-left md:pl-5 pt-4 px-2">
+              It’s not your fault — but it is your pattern. And it can be healed
+            </p>
+
+            <button onClick={handleClick} className="p-5 md:p-3 text-lg md:text-base text-white bg-black rounded-xl mt-6 md:ml-20 md:mt-10">
+              Yes, I Want the Healing Guide
+            </button>
+
+            <img src={payment} className="w-[100%] md:w-[45%] -mt-12 md:mt-0  md:ml-12" alt="" />
+           
+
+            <p className="text-xl -mt-16  text-center md:text-left  md:ml-12">
+              This bestselling guide has helped thousands of women<br /> finally 
+              understand their relationship patterns — and take back their emotional power.
+            </p>
+            <h1 className="font-serif  md:hidden block text-4xl md:text-3xl font-semibold mt-4 md:pr-28">
+              About The Book
+            </h1>
+            <img className="w-[100%] md:hidden block md:w-[60%] mt-7" src={rev} alt="" />
+
+          </div>
+           
+
+            <img className="w-[100%] md:block hidden md:w-[60%] mt-7" src={rev} alt="" />
           </div>
 
           {/* Right Side */}
-          <div className="w-full md:w-[50%] flex flex-col items-center md:items-start ">
+          <div className="w-full hidden md:w-[50%] md:flex flex-col items-center md:items-start ">
             <h1 className="font-serif text-center hidden md:block md:text-left  text-3xl font-bold  md:text-3xl leading-tight">
               Still Attractive<br /> Emotionally
               
@@ -214,7 +254,7 @@ const Main1 = () => {
           <div className="w-full max-w-[350px] flex flex-col items-center text-gray-700">
           <video 
         controls
-        className="w-full md:-m-28 rounded-md shadow-lg"
+        className="w-[85%] md:ml-28 md:-m-28 rounded-md shadow-lg"
         src={vide} // Video source
         poster={book} // Thumbnail image before video starts
       >
