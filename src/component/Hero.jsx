@@ -73,7 +73,8 @@ export default function ProductPage() {
           <hr />
 
 
-          <img className="m-auto md:m-0" src={three} alt="" />
+          <img className="m-auto md:m-0"     loading="eager"
+ src="https://d1yei2z3i6k35z.cloudfront.net/1916642/654494303d816_shopicons2.svg" alt="" />
 
           <div className="  md:ml-20 ml-16">
             <span className="text-[35px] font-sans font-[400] text-black">$19.90</span>
@@ -89,7 +90,8 @@ export default function ProductPage() {
           </button>
 
 
-          <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
+          <img     loading="eager"
+ src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e0b255431f_cards.png" alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
 
 
           <div className="pt-6">
@@ -123,7 +125,8 @@ export default function ProductPage() {
 
           
           <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THE BOOK</h1>
-          <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
+          <img     loading="eager"
+ className="md:w-[75%] w-[100%] m-auto" src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e0902bd669_Capturedecran2023-10-29a15.25.40.png" alt="" />
           <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src="https://d1yei2z3i6k35z.cloudfront.net/5662724/66fbfb394f9d2_video_3736b61355ba3ce86f7c5fa45d26cc65.mp4"></video>
           <p className="font-worksans italic md:text-[20px] text-[18px] leading-[40px]  mb-9 font-semibold md:font-bold w-[100%] md:w-[90%] text-left p-4 " >
           Introducing The Inner Work Relationships Guide– your essential guide to uncovering and healing the hidden emotional wounds that affect your relationships.
@@ -266,7 +269,8 @@ export default function ProductPage() {
           <hr />
 
 
-          <img className="m-auto md:m-0" src={three} alt="" />
+          <img     loading="eager"
+ className="m-auto md:m-0" src="https://d1yei2z3i6k35z.cloudfront.net/1916642/654494303d816_shopicons2.svg" alt="" />
 
           <div className="  md:ml-20">
             <span className="text-[35px] font-sans font-[400] text-black">$19.90</span>
@@ -282,7 +286,8 @@ export default function ProductPage() {
           </button>
 
 
-          <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
+          <img     loading="eager"
+ src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e0b255431f_cards.png" alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
 
 
           <div className="pt-6">
