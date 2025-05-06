@@ -1,28 +1,26 @@
 // ProductPage.jsx
 import React from "react";
-// import book from "../assets/bo.jpeg"
+import book from "../assets/bo.jpeg"
 import three from "../assets/three.png"
 import payment from "../assets/payment.png"
 import Progress from "../component/Progress"
 import { FaCheck } from "react-icons/fa6";
 import rev from "../assets/book-rev.png"
-// import vid from "../assets/vide.mp4"
+import vid from "../assets/vide.mp4"
 import Testimonial from "../component/Testimonial";
 import Testimonial2 from "../component/Testimonial2";
 import Testimonial3 from "../component/Testimonial3";
 import Testimonial4 from "../component/Test5";
 import Testimonial5 from "../component/Test6";
 import Footer from '../component/Footer'
-// import img1 from "../assets/page1.png"
-// import img2 from "../assets/page2.png"
+import img1 from "../assets/page1.png"
+import img2 from "../assets/page2.png"
 import { useState } from "react";
 
 
 export default function ProductPage() {
-  const images = ["https://d1yei2z3i6k35z.cloudfront.net/5662724/678e0ba56efbf_WhatsAppImage2025-01-19at19.52.21.jpeg", "https://d1yei2z3i6k35z.cloudfront.net/5662724/67a8a544bbbda_CleanShot2025-02-09at13.42.042x.png", "https://d1yei2z3i6k35z.cloudfront.net/5662724/6702489d31cf1_CleanShot2024-10-06at10.21.112x.png"]; // All three images
+  const images = [book, img1, img2]; // All three images
   const [currentImage, setCurrentImage] = useState(0);
-  const [loaded, setLoaded] = useState(false);
-
 
   const nextSlide = () => {
     setCurrentImage((prev) => (prev + 1) % images.length);
@@ -43,10 +41,7 @@ export default function ProductPage() {
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
-    className={`transition-opacity duration-700 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'} w-full h-full object-cover transition duration-500`}
-    loading="eager"
-    onLoad={() => setLoaded(true)}
-
+    className="w-full h-full object-cover transition duration-500"
   />
 
   {/* Prev Button */}
@@ -73,8 +68,7 @@ export default function ProductPage() {
           <hr />
 
 
-          <img className="m-auto md:m-0"     loading="eager"
- src="https://d1yei2z3i6k35z.cloudfront.net/1916642/654494303d816_shopicons2.svg" alt="" />
+          <img className="m-auto md:m-0" src={three} alt="" />
 
           <div className="  md:ml-20 ml-16">
             <span className="text-[35px] font-sans font-[400] text-black">$19.90</span>
@@ -90,8 +84,7 @@ export default function ProductPage() {
           </button>
 
 
-          <img     loading="eager"
- src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e0b255431f_cards.png" alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
+          <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
 
 
           <div className="pt-6">
@@ -125,9 +118,8 @@ export default function ProductPage() {
 
           
           <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THE BOOK</h1>
-          <img     loading="eager"
- className="md:w-[75%] w-[100%] m-auto" src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e0902bd669_Capturedecran2023-10-29a15.25.40.png" alt="" />
-          <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src="https://d1yei2z3i6k35z.cloudfront.net/5662724/66fbfb394f9d2_video_3736b61355ba3ce86f7c5fa45d26cc65.mp4"></video>
+          <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
+          <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
           <p className="font-worksans italic md:text-[20px] text-[18px] leading-[40px]  mb-9 font-semibold md:font-bold w-[100%] md:w-[90%] text-left p-4 " >
           Introducing The Inner Work Relationships Guide– your essential guide to uncovering and healing the hidden emotional wounds that affect your relationships.
           </p>
@@ -269,8 +261,7 @@ export default function ProductPage() {
           <hr />
 
 
-          <img     loading="eager"
- className="m-auto md:m-0" src="https://d1yei2z3i6k35z.cloudfront.net/1916642/654494303d816_shopicons2.svg" alt="" />
+          <img className="m-auto md:m-0" src={three} alt="" />
 
           <div className="  md:ml-20">
             <span className="text-[35px] font-sans font-[400] text-black">$19.90</span>
@@ -286,8 +277,7 @@ export default function ProductPage() {
           </button>
 
 
-          <img     loading="eager"
- src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e0b255431f_cards.png" alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
+          <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
 
 
           <div className="pt-6">
