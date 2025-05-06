@@ -1,6 +1,6 @@
 // ProductPage.jsx
 import React from "react";
-import book from "../assets/bo.avif"
+import book from "../assets/bo.jpeg"
 import three from "../assets/three.png"
 import payment from "../assets/payment.png"
 import Progress from "../component/Progress"
