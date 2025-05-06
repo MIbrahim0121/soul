@@ -13,29 +13,119 @@ import Testimonial3 from "../component/Testimonial3";
 import Testimonial4 from "../component/Test5";
 import Testimonial5 from "../component/Test6";
 import Footer from '../component/Footer'
+import img1 from "../assets/page1.png"
+import img2 from "../assets/page2.png"
+import { useState } from "react";
 
 
 export default function ProductPage() {
+  const images = [book, img1, img2]; // All three images
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  };
+  // const handleClick = () => {
+  //   window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
+  // };
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full">
-          <img
-            src={book} // Replace with your image path
-            alt="The Inner Work of Relationships Guide"
-            className="border-2 border-black md:ml-36 md:w-[30vw]  md:h-[93vh] w-[65vw] m-auto   object-cover"
-          />
+        <div className="relative w-[80vw] md:w-[30vw] h-[55vh] md:h-[93vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
+  <img
+    src={images[currentImage]}
+    alt="The Inner Work of Relationships Guide"
+    className="w-full h-full object-cover transition duration-500"
+  />
+
+  {/* Prev Button */}
+  <button
+    onClick={prevSlide}
+    className="absolute top-1/2 left-3 md:-left-5 transform -translate-y-1/2 bg-black/80 hover:bg-black text-white text-2xl rounded-full p-3 shadow-xl hover:scale-110 transition duration-300"
+  >
+    ‹
+  </button>
+
+  {/* Next Button */}
+  <button
+    onClick={nextSlide}
+    className="absolute top-1/2 right-3 md:-right-5 transform -translate-y-1/2 bg-black/80 hover:bg-black text-white text-2xl rounded-full p-3 shadow-xl hover:scale-110 transition duration-300"
+  >
+    ›
+  </button>
+</div>
+<div className="md:w-1/2 w-full p-6 block md:hidden space-y-4">
+          <h1 className="md:text-[44px] text-[38px] leading-[45px] md:text-left text-center font-[700] font-cormorant text-gray-900">
+            THE INNER WORK <br /> RELATIONSHIPS <br /> GUIDE
+          </h1>
+          <p className="text-gray-800 md:text-left text-sm text-center ">4.8/5 (606 Reviews) | <strong>17.2K Sold</strong></p>
+          <hr />
+
+
+          <img className="m-auto md:m-0" src={three} alt="" />
+
+          <div className="  md:ml-20 ml-16">
+            <span className="text-[35px] font-sans font-[400] text-black">$19.90</span>
+            <span className="text-[35px] font-sans line-through text-gray-400 ml-3">$58.00</span>
+          </div>
+          <p className="font-[700] font-worksans md:text-[19px] text-[17px] text-center md:text-left ">Discount 60% - Only Today</p>
+
+          <Progress />
+
+
+          <button className="bg-black text-white w-[100%] py-3 rounded-full md:rounded-lg  text-lg font-bold hover:bg-gray-800 transition">
+            GET IT NOW!
+          </button>
+
+
+          <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
+
+
+          <div className="pt-6">
+            <h2 className="text-[21px] font-bold font-worksans text-gray-900">This Book Includes:</h2>
+            <ul className="list-disc font-worksans md:w-[70%] list-inside text-[20px] leading-[34px] text-gray-700 pt-2">
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+                100+ thoughtfully curated pages designed to help you examine and transform how you approach relationships.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />Engaging exercises that encourage you to question and evaluate long-held beliefs and emotional patterns in your relationships.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />Tools to identify limiting beliefs about love, connection, and intimacy, transforming them into empowering and healthy perspectives.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+                Guidance on cultivating self-awareness and understanding the connection between your emotional patterns and your relationship dynamics.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+
+                Journal sections for reflecting on relationship challenges, emotional triggers, and the insights gained along your journey toward healing.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+
+                Inspiring quotes and affirmations will motivate you to embrace vulnerability and authentic communication in your relationships.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+                Techniques for emotional awareness and mindfulness to help you navigate conflicts and create healthier, more fulfilling connections.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+              A beautifully organized layout for easy navigation and interactive engagement makes your relationship transformation journey seamless.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+              Opportunities for personal growth as you uncover deeper self-awareness and unlock new perspectives in how you relate to others.</li>
+              <li className="mt-5 list-none" ><FaCheck className="inline mr-3 text-purple-600" />
+              A valuable guide to achieve emotional freedom, cultivate deeper intimacy, and foster authentic, empowered relationships.</li>
+              {/* Add more items as needed */}
+            </ul>
+          </div>
+        </div>
+
+
           
-          <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THIS BOOK</h1>
-          <img className="w-[75%] ml-28 " src={rev} alt="" />
-          <video controls  className="w-[55%] m-auto h-[87vh] " src={vid}></video>
-          <p className="font-worksans text-[20px] leading-[40px] font-semibold w-[90%] text-left p-4 " >
+          <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THE BOOK</h1>
+          <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
+          <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
+          <p className="font-worksans italic md:text-[20px] text-[18px] leading-[40px]  mb-9 font-semibold md:font-bold w-[100%] md:w-[90%] text-left p-4 " >
           Introducing The Inner Work Relationships Guide– your essential guide to uncovering and healing the hidden emotional wounds that affect your relationships.
           </p>
-          <p className="font-worksans text-[20px] text-left leading-10 font-normal md:mb-10 w-[90%]" >This book focuses on using intimate relationships as a powerful tool for personal growth, healing childhood traumas, and overcoming emotional patterns that may sabotage your connections. It delves into how early-life unresolved wounds shape current relationship dynamics and offers strategies for recognizing and addressing these deep-seated issues.</p>
-          <p className="font-worksans text-[20px] text-left leading-10 font-normal md:mb-10 w-[90%]" >This book focuses on using intimate relationships as a powerful tool for personal growth, healing childhood traumas, and overcoming emotional patterns that may sabotage your connections. It delves into how early-life unresolved wounds shape current relationship dynamics and offers strategies for recognizing and addressing these deep-seated issues.</p>
-          <p className="font-worksans text-[20px] text-left leading-10 font-normal md:mb-10 w-[90%]" >This book focuses on using intimate relationships as a powerful tool for personal growth, healing childhood traumas, and overcoming emotional patterns that may sabotage your connections. It delves into how early-life unresolved wounds shape current relationship dynamics and offers strategies for recognizing and addressing these deep-seated issues.</p>
+          <p className="font-worksans text-[20px] text-left leading-10 font-[350] mb-9  md:mb-10 w-[100%] md:w-[90%]" >This book focuses on using intimate relationships as a powerful tool for personal growth, healing childhood traumas, and overcoming emotional patterns that may sabotage your connections. It delves into how early-life unresolved wounds shape current relationship dynamics and offers strategies for recognizing and addressing these deep-seated issues.</p>
+          <p className="font-worksans text-[20px] text-left leading-10 font-[350]  mb-9  md:mb-10w-[100%] md:w-[90%]" >Through thoughtfully designed exercises, you’ll learn to identify emotional triggers, practice vulnerability, and develop stronger communication skills. The book emphasizes the importance of healing together, fostering emotional intimacy, and building a conscious, spiritual connection with your partner.</p>
+          <p className="font-worksans text-[20px] text-left leading-10 font-[350]  mb-9  md:mb-10 w-[100%] md:w-[90%]" >With compassionate, clear guidance, The Inner Work Relationships Guide embarks you on a transformative journey, providing tools to create more fulfilling, authentic, and resilient relationships by healing both individually and as a couple</p>
           
           </div>
           <Testimonial/>
@@ -163,7 +253,7 @@ export default function ProductPage() {
         </div>
 
         {/* Right Side - Details */}
-        <div className="md:w-1/2 w-full p-6 space-y-4">
+        <div className="md:w-1/2 w-full hidden md:block p-6 space-y-4">
           <h1 className="md:text-[44px] text-[38px] leading-[45px] md:text-left text-center font-[700] font-cormorant text-gray-900">
             THE INNER WORK <br /> RELATIONSHIPS <br /> GUIDE
           </h1>
