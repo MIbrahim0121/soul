@@ -47,7 +47,7 @@ export default function ProductPage() {
   {/* Prev Button */}
   <button
     onClick={prevSlide}
-    className="absolute top-1/2 left-3 md:-left-5 transform -translate-y-1/2 bg-black/80 hover:bg-black text-white text-2xl rounded-full p-3 shadow-xl hover:scale-110 transition duration-300"
+    className="absolute top-1/2 left-3 md:left-1 transform -translate-y-1/2 bg-black/80 hover:bg-black text-white text-2xl rounded-full p-1 shadow-xl hover:scale-110 transition duration-300"
   >
     ‹
   </button>
@@ -55,7 +55,7 @@ export default function ProductPage() {
   {/* Next Button */}
   <button
     onClick={nextSlide}
-    className="absolute top-1/2 right-3 md:-right-5 transform -translate-y-1/2 bg-black/80 hover:bg-black text-white text-2xl rounded-full p-3 shadow-xl hover:scale-110 transition duration-300"
+    className="absolute top-1/2 right-3 md:right-1 transform -translate-y-1/2 bg-black/80 hover:bg-black text-white text-2xl rounded-full p-1  shadow-xl hover:scale-110 transition duration-300"
   >
     ›
   </button>
@@ -79,7 +79,7 @@ export default function ProductPage() {
           <Progress />
 
 
-          <button className="bg-black text-white w-[100%] py-3 rounded-full md:rounded-lg  text-lg font-bold hover:bg-gray-800 transition">
+          <button className="bg-black text-white w-[100%] py-5 rounded-full md:rounded-none  text-lg font-bold hover:bg-gray-800 transition">
             GET IT NOW!
           </button>
 
