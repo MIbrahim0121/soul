@@ -1,25 +1,25 @@
 // ProductPage.jsx
 import React from "react";
-import book from "../assets/bo.jpeg"
+// import book from "../assets/bo.jpeg"
 import three from "../assets/three.png"
 import payment from "../assets/payment.png"
 import Progress from "../component/Progress"
 import { FaCheck } from "react-icons/fa6";
 import rev from "../assets/book-rev.png"
-import vid from "../assets/vide.mp4"
+// import vid from "../assets/vide.mp4"
 import Testimonial from "../component/Testimonial";
 import Testimonial2 from "../component/Testimonial2";
 import Testimonial3 from "../component/Testimonial3";
 import Testimonial4 from "../component/Test5";
 import Testimonial5 from "../component/Test6";
 import Footer from '../component/Footer'
-import img1 from "../assets/page1.png"
-import img2 from "../assets/page2.png"
+// import img1 from "../assets/page1.png"
+// import img2 from "../assets/page2.png"
 import { useState } from "react";
 
 
 export default function ProductPage() {
-  const images = [book, img1, img2]; // All three images
+  const images = ["https://d1yei2z3i6k35z.cloudfront.net/5662724/678e0ba56efbf_WhatsAppImage2025-01-19at19.52.21.jpeg", "https://d1yei2z3i6k35z.cloudfront.net/5662724/67a8a544bbbda_CleanShot2025-02-09at13.42.042x.png", "https://d1yei2z3i6k35z.cloudfront.net/5662724/6702489d31cf1_CleanShot2024-10-06at10.21.112x.png"]; // All three images
   const [currentImage, setCurrentImage] = useState(0);
 
   const nextSlide = () => {
@@ -29,9 +29,9 @@ export default function ProductPage() {
   const prevSlide = () => {
     setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
   };
-  // const handleClick = () => {
-  //   window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
-  // };
+  const handleClick = () => {
+    window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
+  };
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
@@ -79,7 +79,7 @@ export default function ProductPage() {
           <Progress />
 
 
-          <button className="bg-black text-white w-[100%] py-5 rounded-full md:rounded-none  text-lg font-bold hover:bg-gray-800 transition">
+          <button onClick={handleClick} className="bg-black text-white w-[100%] py-5 rounded-full md:rounded-none  text-lg font-bold hover:bg-gray-800 transition">
             GET IT NOW!
           </button>
 
@@ -119,7 +119,7 @@ export default function ProductPage() {
           
           <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THE BOOK</h1>
           <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
-          <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
+          <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src="https://d1yei2z3i6k35z.cloudfront.net/5662724/66fbfb394f9d2_video_3736b61355ba3ce86f7c5fa45d26cc65.mp4"></video>
           <p className="font-worksans italic md:text-[20px] text-[18px] leading-[40px]  mb-9 font-semibold md:font-bold w-[100%] md:w-[90%] text-left p-4 " >
           Introducing The Inner Work Relationships Guide– your essential guide to uncovering and healing the hidden emotional wounds that affect your relationships.
           </p>
@@ -231,7 +231,7 @@ export default function ProductPage() {
   </p>
 
 </div>
-  <button className="md:ml-10 bg-black text-white w-[100%] py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
+  <button onClick={handleClick} className="md:ml-10 bg-black text-white w-[100%] py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
             GET IT NOW!
           </button>
           <div className="mt-10 md:ml-10 mb-8 bg-gradient-to-b p from-[#FFF4E9] to-[#FAF0FE] p-9 font-light rounded-b-2xl shadow-lg max-w-3xl mx-auto text-center text-[#2e2e2e] space-y-6">
@@ -245,7 +245,7 @@ export default function ProductPage() {
 <Testimonial3/>
 <Testimonial4/>
 <Testimonial5/>
-<button className="md:ml-10 bg-black text-white w-[85%] md:mb-20 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
+<button onClick={handleClick} className="md:ml-10 bg-black text-white w-[85%] md:mb-20 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
             GET IT NOW!
           </button>
 
@@ -272,7 +272,7 @@ export default function ProductPage() {
           <Progress />
 
 
-          <button className="bg-black text-white w-[100%] py-3 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
+          <button onClick={handleClick} className="bg-black m-auto text-white w-[100%] py-3 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
             GET IT NOW!
           </button>
 
