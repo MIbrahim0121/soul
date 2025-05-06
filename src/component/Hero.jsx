@@ -21,6 +21,8 @@ import { useState } from "react";
 export default function ProductPage() {
   const images = ["https://d1yei2z3i6k35z.cloudfront.net/5662724/678e0ba56efbf_WhatsAppImage2025-01-19at19.52.21.jpeg", "https://d1yei2z3i6k35z.cloudfront.net/5662724/67a8a544bbbda_CleanShot2025-02-09at13.42.042x.png", "https://d1yei2z3i6k35z.cloudfront.net/5662724/6702489d31cf1_CleanShot2024-10-06at10.21.112x.png"]; // All three images
   const [currentImage, setCurrentImage] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
 
   const nextSlide = () => {
     setCurrentImage((prev) => (prev + 1) % images.length);
@@ -41,7 +43,10 @@ export default function ProductPage() {
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
-    className="w-full h-full object-cover transition duration-500"
+    className={`transition-opacity duration-700 ease-in-out ${loaded ? 'opacity-100' : 'opacity-0'} w-full h-full object-cover transition duration-500`}
+    loading="eager"
+    onLoad={() => setLoaded(true)}
+
   />
 
   {/* Prev Button */}
