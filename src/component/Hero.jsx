@@ -37,7 +37,16 @@ export default function ProductPage() {
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full">
-        <div className="relative w-[80vw] md:w-[30vw] h-[55vh] md:h-[93vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
+        <div className="block md:hidden m-auto relative w-[75%] md:ml-[30%] md:w-[54%] md:pr-16">
+        <img className="w-full border-2 border-black h-auto rounded-md" src={images[currentImage]} alt="Slider" />
+              <button onClick={prevSlide} className="absolute top-1/2 md:-left-4 left-2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-1">
+                ‹
+              </button>
+              <button onClick={nextSlide} className="absolute top-1/2 md:right-12 right-2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-1">
+                ›
+              </button>
+</div>
+        <div className="relative w-[80vw] hidden md:block  md:w-[30vw] h-[55vh] md:h-[93vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
