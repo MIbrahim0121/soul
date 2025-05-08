@@ -33,6 +33,7 @@ export default function ProductPage() {
     window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
   };
   return (
+    <>
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
         {/* Left Side - Image */}
@@ -245,9 +246,11 @@ export default function ProductPage() {
 <Testimonial3/>
 <Testimonial4/>
 <Testimonial5/>
-<button onClick={handleClick} className="md:ml-10 bg-black text-white w-[85%] md:mb-20 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
+<div className="flex ">
+<button onClick={handleClick} className="md:ml-10 bg-black m-auto text-white w-[85%] md:mb-20 py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
             GET IT NOW!
           </button>
+          </div>
 
 
         </div>
@@ -308,7 +311,8 @@ export default function ProductPage() {
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
+    <Footer/>
+    </>
   );
 }
