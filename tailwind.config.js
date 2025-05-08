@@ -15,11 +15,11 @@ export default {
           '50%': { opacity: '1' },
         },
       },
-      fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        cormorant: ['"Cormorant Garamond"', 'serif'],
-        worksans: ['"Work Sans"', 'sans-serif'],
-      },
+      // fontFamily: {
+      //   sans: ['Montserrat', 'sans-serif'],
+      //   cormorant: ['"Cormorant Garamond"', 'serif'],
+      //   worksans: ['"Work Sans"', 'sans-serif'],
+      // },
     },
   },
   plugins: [],
