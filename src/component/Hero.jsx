@@ -62,7 +62,7 @@ export default function ProductPage() {
   </button>
 </div>
 <div className="md:w-1/2 w-full p-6 block md:hidden space-y-4">
-          <h1 className="md:text-[44px] text-[38px] leading-[45px] md:text-left text-center font-[700] font-cormorant text-gray-900">
+          <h1 className="md:text-[44px] text-[38px] leading-[45px] md:text-left text-center font-light font-serif text-gray-900">
             THE INNER WORK <br /> RELATIONSHIPS <br /> GUIDE
           </h1>
           <p className="text-gray-800 md:text-left text-sm text-center ">4.8/5 (606 Reviews) | <strong>17.2K Sold</strong></p>
