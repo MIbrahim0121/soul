@@ -30,7 +30,8 @@ export default function ProductPage() {
     setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
   };
   const handleClick = () => {
-    window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
+    // window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
+    window.open("https://latiodicsubsorts.com/click", "_blank");
   };
   return (
     <>
