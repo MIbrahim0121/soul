@@ -16,8 +16,7 @@ const TestimonialCard = () => {
         <img
           src="https://d1yei2z3i6k35z.cloudfront.net/1916642/653e084fd22f0_Capturedecran2023-10-29a15.22.46.png"
           alt="Rating"
-          className="w-48"
-        />
+className="w-[140px] md:w-48"        />
       </div>
       </div>
 
