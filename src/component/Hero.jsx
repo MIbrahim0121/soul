@@ -15,11 +15,26 @@ import Testimonial5 from "../component/Test6";
 import Footer from '../component/Footer'
 import img1 from "../assets/page1.png"
 import img2 from "../assets/page2.png"
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import thumbnail from "../assets/thumbnail.png"
 
 
 export default function ProductPage() {
+   useEffect(() => {
+    // Clear cookies
+    document.cookie.split(";").forEach((cookie) => {
+      document.cookie = cookie
+        .replace(/^ +/, "")
+        .replace(/=.*/, "=;expires=" + new Date(0).toUTCString() + ";path=/");
+    });
+
+    // Clear cache (Service Worker cache)
+    if ("caches" in window) {
+      caches.keys().then((names) => {
+        names.forEach((name) => caches.delete(name));
+      });
+    }
+  }, []);
   const images = [book, img1, img2]; // All three images
   const [currentImage, setCurrentImage] = useState(0);
 
