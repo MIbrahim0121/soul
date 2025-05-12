@@ -8,7 +8,7 @@ const TestimonialCard = () => {
         <img
           src="https://d1yei2z3i6k35z.cloudfront.net/1916642/654319fae325f_7.jpg"
           alt="Emly Burnett"
-          className="md:w-12 md:h-12 w-10 h-10 rounded-full object-cover"
+          className="w-12 h-12 rounded-full object-cover"
         />
           <div className="mt-2">
         <p className="font-bold font-worksans text-[23px]">Emly Burnett</p>
