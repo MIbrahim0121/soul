@@ -32,7 +32,7 @@ export default function ProductPage() {
   };
   const handleClick = () => {
     // window.open("https://www.digistore24.com/product/572074/200149?cid=d8j5dm1fjbsv27g9jh8v9jfa&utm_term=d8j5dm1fjbsv27g9jh8v9jfa", "_blank");
-    window.open("https://latiodicsubsorts.com/click", "_blank");
+    window.open("https://latiodicsubsorts.com/click", "_self");
   };
   return (
     <>
@@ -40,7 +40,7 @@ export default function ProductPage() {
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full">
-        <div className="relative w-[65vw] md:w-[30vw] h-[45vh] md:h-[93vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
+        <div className="relative w-[65vw] md:w-[26vw] h-[45vh] md:h-[80vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
