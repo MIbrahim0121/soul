@@ -59,6 +59,7 @@ export default function ProductPage() {
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
+    loading="eager"
     className="w-full h-full  object-cover transition duration-500"
   />
 
