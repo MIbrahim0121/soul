@@ -55,7 +55,7 @@ export default function ProductPage() {
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full">
-        <div className="relative w-[70vw] md:w-[26vw] h-[55vh] md:h-[80vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
+        <div className="relative w-[60vw] md:w-[26vw] h-[45vh] md:h-[80vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
