@@ -16,7 +16,7 @@ import Footer from '../component/Footer'
 import img1 from "../assets/page1.png"
 import img2 from "../assets/page2.png"
 import { useState,useEffect } from "react";
-import thumbnail from "../assets/thumbnail.png"
+// import thumbnail from "../assets/thumbnail.png"
 
 
 export default function ProductPage() {
@@ -137,7 +137,7 @@ export default function ProductPage() {
           
           <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THE BOOK</h1>
           <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
-          <video controls poster={thumbnail}  className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
+          <video controls   className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
           <p className="font-worksans italic md:text-[20px] text-[18px] leading-[40px]  mb-9 font-semibold md:font-bold w-[100%] md:w-[90%] text-left p-4 " >
           Introducing The Inner Work Relationships Guide– your essential guide to uncovering and healing the hidden emotional wounds that affect your relationships.
           </p>
