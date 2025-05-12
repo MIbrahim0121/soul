@@ -16,6 +16,7 @@ import Footer from '../component/Footer'
 import img1 from "../assets/page1.png"
 import img2 from "../assets/page2.png"
 import { useState } from "react";
+import thumbnail from "../assets/thumbnail.png"
 
 
 export default function ProductPage() {
@@ -39,11 +40,11 @@ export default function ProductPage() {
       <div className="max-w-6xl w-full flex flex-col md:flex-row bg-white  overflow-hidden">
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full">
-        <div className="relative w-[80vw] md:w-[30vw] h-[55vh] md:h-[93vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
+        <div className="relative w-[65vw] md:w-[30vw] h-[45vh] md:h-[93vh] mx-auto border-1 shadow-lg overflow-hidden md:border-2 border-black">
   <img
     src={images[currentImage]}
     alt="The Inner Work of Relationships Guide"
-    className="w-full h-full object-cover transition duration-500"
+    className="w-full md:h-full  object-cover transition duration-500"
   />
 
   {/* Prev Button */}
@@ -62,19 +63,19 @@ export default function ProductPage() {
     ›
   </button>
 </div>
-<div className="md:w-1/2 w-full p-6 block md:hidden space-y-4">
-          <h1 className="md:text-[44px] text-[38px] leading-[45px] md:text-left text-center font-light font-serif text-gray-900">
-            THE INNER WORK <br /> RELATIONSHIPS <br /> GUIDE
+<div className="md:w-1/2 w-full p-6 block md:hidden space-y-3 md:space-y-6">
+          <h1 className="md:text-[44px] text-[27px] md:leading-[45px] leading-[35px] md:text-left text-center font-light font-serif text-gray-900">
+            THE INNER WORK <br /> RELATIONSHIPS <br className="hidden md:block" /> GUIDE
           </h1>
           <p className="text-gray-800 md:text-left text-sm text-center ">4.8/5 (606 Reviews) | <strong>17.2K Sold</strong></p>
           <hr />
 
 
-          <img className="m-auto md:m-0" src={three} alt="" />
+          <img className="m-auto  md:m-0" src={three} alt="" />
 
-          <div className="  md:ml-20 ml-16">
-            <span className="text-[35px] font-sans font-[400] text-black">$19.90</span>
-            <span className="text-[35px] font-sans line-through text-gray-400 ml-3">$58.00</span>
+          <div className="  md:ml-20 md:mt-0   ml-16">
+            <span className="text-[30px]  md:text-[35px] font-sans font-[400] text-black">$19.90</span>
+            <span className="text-[30px]  md:text-[35px] font-sans line-through text-gray-400 ml-3">$58.00</span>
           </div>
           <p className="font-[700] font-worksans md:text-[19px] text-[17px] text-center md:text-left ">Discount 60% - Only Today</p>
 
@@ -121,7 +122,7 @@ export default function ProductPage() {
           
           <div className="text-center" ><h1 className="font-cormorant mt-5 text-[36px] font-bold" >ABOUT THE BOOK</h1>
           <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
-          <video controls  className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
+          <video controls poster={thumbnail}  className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
           <p className="font-worksans italic md:text-[20px] text-[18px] leading-[40px]  mb-9 font-semibold md:font-bold w-[100%] md:w-[90%] text-left p-4 " >
           Introducing The Inner Work Relationships Guide– your essential guide to uncovering and healing the hidden emotional wounds that affect your relationships.
           </p>
