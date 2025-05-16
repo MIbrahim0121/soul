@@ -19,12 +19,12 @@ const ReverseProgressBar = () => {
 
     return (
         <div className="w-full max-w-md mx-auto mt-10">
-            <div className="text-sm font-[500]  px-3 py-1 rounded-full w-max">
+            <div className="text-sm font-[500] text-center md:w-max w-[100vw]    py-1 rounded-full">
                 NEW VERSION READY: Limited To {progress} Units
             </div>     
              <div className="bg-gray-300 h-6 rounded-full overflow-hidden animate-fade transition-all duration-500">
                 <div
-                    className="text-white text-center bg-purple-500 h-full transition-all duration-500"
+                    className="text-white  text-center bg-purple-500 h-full transition-all duration-500"
                     style={{ width: `${progress}%` }}
                 >INSTANT DOWNLOAD </div>
             </div>
