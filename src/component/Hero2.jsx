@@ -1,24 +1,24 @@
 // ProductPage.jsx
 // import React from "react";
 import book from "../assets/bo.jpeg"
-import three from "../assets/three.png"
+// import three from "../assets/three.png"
 import payment from "../assets/payment.png"
 import Progress from "../component/Progress"
 import { FaCheck } from "react-icons/fa6";
 import rev from "../assets/raw - Edited.jpg"
 import vid from "../assets/vide.mp4"
-import Testimonial from "../component/Testimonial";
-import Testimonial2 from "../component/Testimonial2";
-import Testimonial3 from "../component/Testimonial3";
-import Testimonial4 from "../component/Test5";
-import Testimonial5 from "../component/Test6";
+// import Testimonial from "../component/Testimonial";
+// import Testimonial2 from "../component/Testimonial2";
+// import Testimonial3 from "../component/Testimonial3";
+// import Testimonial4 from "../component/Test5";
+// import Testimonial5 from "../component/Test6";
 import Footer from '../component/Footer'
 import img1 from "../assets/page1.png"
 import img2 from "../assets/page2.png"
 import { useState, useEffect } from "react";
-import thumbnail from "../assets/thumbnail.png"
+// import thumbnail from "../assets/thumbnail.png"
 import Testimonials from "../component/Testimonialsec";
-import Thumbnail1 from "../assets/Thumbnails (5).png"
+import Thumbnail1 from "../assets/Thumbnails.png"
 
 
 export default function ProductPage() {
@@ -209,10 +209,7 @@ export default function ProductPage() {
                                         </div> </li>
                                 </ul>
                             </div>
-                             {/* <button onClick={handleClick} className="  bg-black text-white md:w-[30%] w-[45%] py-4 rounded-lg text-lg font-bold hover:bg-gray-800 transition">
-         Yes, I’m Ready to Break the Cycle for Good!
-
-                            </button> */}
+                            
 
                         </div>
                         <hr />
