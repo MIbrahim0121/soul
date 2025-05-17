@@ -243,9 +243,6 @@ export default function ProductPage() {
                         <p className="text-gray-800 md:text-left text-lg font-medium text-center "> Discover the hidden patterns quietly shaping your relationships — and how to break free to attract love that feels safe, steady, and real.
                         </p>
                         <hr />
-                          <p className="text-xl md:text-2xl font-semibold text-purple-700 mb-2 ">
-         Special Offer — Just $19.90 <span className="line-through text-gray-500 ml-2 text-lg">(Normally $58.00)</span>
-      </p>
                         <Progress />
 
 
@@ -253,6 +250,9 @@ export default function ProductPage() {
                             Yes, I’m Ready to Break the Cycle!
 
                         </button>
+                          <p className="text-xl md:text-2xl font-semibold text-purple-700 mb-2 ">
+         Special Offer — Just $19.90 <span className="line-through text-gray-500 ml-2 text-lg">(Normally $58.00)</span>
+      </p>
                         <p className="text-sm  font-[400] font-worksans md:text-[19px] text-[17px] text-center md:text-center ">Instant Download. Secure Checkout. Risk-Free for 60 Days</p>
 
                         <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
