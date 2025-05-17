@@ -106,6 +106,9 @@ export default function ProductPage() {
                                         Yes, I’m Ready to Break the Cycle for Good!
 
                             </button>
+                            <p className="text-md md:text-2xl font-semibold text-purple-700 mb-2 ">
+         Special Offer — Just $19.90 <span className="line-through text-gray-500 ml-2 text-lg">(Normally $58.00)</span>
+      </p>
 
 
                             <img src={payment} alt="Visa" className="md:w-[70%] w-[100%] m-auto " />
