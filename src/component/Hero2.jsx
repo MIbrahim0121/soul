@@ -130,10 +130,20 @@ export default function ProductPage() {
                             </ul>
                         </div>
                         </div>
+                         <div className="mt-10 block md:hidden  mb-8 bg-gradient-to-b p from-[#FFF4E9] to-[#FAF0FE] p-9 font-light rounded-b-2xl shadow-lg max-w-2xl  text-center text-[#2e2e2e] space-y-5 ">
+                            <h2 className="font-worksans font-bold text-[20px]" >Try It Risk-Free — 60-Day Money-Back Guarantee
+                            </h2>
+                            <p className="font-worksans text-[19px] font-normal text-left" >If this guide doesn’t bring you new clarity or help you feel more emotionally at peace, simply reach out for a full refund. No questions asked.
+                            </p>
+                            <button onClick={handleClick} className="    bg-black text-white w-[80%] py-4 rounded-lg text-md font-bold hover:bg-gray-800 transition">
+                                I’m Ready to Start My Healing Journey Now!
+                            </button>
+
+                        </div>
 
 
 
-                        <div className="text-center" >
+                        <div className="md:mb-0 mb-5 text-center" >
                             <img className="md:w-[75%] w-[100%] m-auto" src={rev} alt="" />
                             <video controls poster={Thumbnail1} className="w-[75%] md:w-[55%] m-auto h-auto " src={vid}></video>
 
@@ -141,9 +151,9 @@ export default function ProductPage() {
                         </div>
 
 
-                        <div className="mt-20   bg-gradient-to-b  from-[#FFF4E9] to-[#FAF0FE] p-9 font-light rounded-b-2xl shadow-lg w-[100vw] text-center text-[#2e2e2e] space-y-6">
+                        <div className="md:mt-40  bg-gradient-to-b  from-[#FFF4E9] to-[#FAF0FE] p-9 font-light rounded-b-2xl shadow-lg w-[100vw] text-center text-[#2e2e2e] space-y-6">
                             {/* Top Context */}
-  <div className="md:p-6 text-left w-[100vw] mx-auto">
+  <div className="md:p-6  text-left w-[100vw] mx-auto">
                 <h2 className="md:text-4xl text-center  md:w-[100%] w-[90%] text-3xl md:pl-2 font-bold text-gray-900 mb-6">Here’s Exactly What You’ll Get Inside:</h2>
        <ul className="space-y-6 text-left text-[19px] md:pl-10 md:w-[90%] w-[80%]">
            <li className="flex items-start">
@@ -277,7 +287,7 @@ export default function ProductPage() {
                             </ul>
                         </div>
 
-                        <div className="mt-10    mb-8 bg-gradient-to-b p from-[#FFF4E9] to-[#FAF0FE] p-9 font-light rounded-b-2xl shadow-lg max-w-2xl  text-center text-[#2e2e2e] space-y-5 ">
+                        <div className="mt-10   mb-8 bg-gradient-to-b p from-[#FFF4E9] to-[#FAF0FE] p-9 font-light rounded-b-2xl shadow-lg max-w-2xl  text-center text-[#2e2e2e] space-y-5 ">
                             <h2 className="font-worksans font-bold text-[20px]" >Try It Risk-Free — 60-Day Money-Back Guarantee
                             </h2>
                             <p className="font-worksans text-[19px] font-normal text-left" >If this guide doesn’t bring you new clarity or help you feel more emotionally at peace, simply reach out for a full refund. No questions asked.
